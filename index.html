@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张瑜的个人主页</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 3px solid #3498db;
+        }
+        .header-text {
+            flex: 1;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+        }
+        .info-item {
+            margin-bottom: 15px;
+        }
+        .label {
+            font-weight: bold;
+            color: #3498db;
+            display: inline-block;
+            width: 80px;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .intro {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- 请将图片放在与HTML文件同级的images文件夹中 -->
+            <img src="profile.jpg" alt="张瑜的照片" class="profile-pic">
+            <div class="header-text">
+                <h1>张瑜</h1>
+                <div class="info-item">
+                    <span class="label">学校:</span>
+                    青岛科技大学
+                </div>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <span class="label">地址:</span>
+            崂山，青岛266100，中国
+        </div>
+
+        <div class="info-item">
+            <span class="label">邮箱:</span>
+            2129730128@mails.qust.edu.cn
+        </div>
+
+        <div class="intro">
+            <h3>简介</h3>
+            <p>青岛科技大学数据科学学院研究生</p>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center; color: #7f8c8d; font-size: 14px;">
+            © 2025 张瑜 - 个人主页
+        </div>
+    </div>
+</body>
+</html>
